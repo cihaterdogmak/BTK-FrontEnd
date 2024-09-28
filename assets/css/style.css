@@ -70,169 +70,184 @@ img {
 }
 
 .icon.icon-bed {
-    background-image: url('../img/icons/bed.svg');
+    background-image: url('../img/icon/bed.svg');
 }
 
 .icon.icon-bath {
-    background-image: url('../img/icons/bath.svg');
+    background-image: url('../img/icon/bath.svg');
 }
 
 .icon.icon-sqft {
-    background-image: url('../img/icons/sqft.svg');
-}
-
-.city-cards-img  img{
-    overflow: 'hidden';
-    border-radius: 19px;
-    position: relative;
-    height: 100%;
-}
-
-.city-cards-text {
-    position: absolute;
-    padding: 30px 0px 0px 30px;
-    z-index: 2;
-}
-
-.city-cards {
-    margin: 20px 0px 0px 0px;
-    position: relative;
-    color: white;
-    overflow: hidden;
-    height: 100%;
-}
-
-.city-cards-op {
-    border-radius: 16px;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.city-cards-img::before {
-    content: '';
-    background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-}
-.why-choose-us {
-    background-color: #E7C873;
-    margin-top: 50px;
-}
-
-.why-choose-us-text {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px 0px 50px 0px;
-    padding-top: 100px;
-    gap: 20px;
-
-}
-.why-choose-us-card {
-    align-items: center;
-    justify-content: center;
-    gap: 10;
-    flex-direction: column;
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-.properties-card-img {
-    margin: 2px;
-}
-.properties-card-img img {
-    border-radius: 16px;
-}
-
-.properties-card {
-    margin: 15px;
-    border-radius: 16px;
-    position: relative;
-}
-
-.properties-card-text{
-    padding: 25px;
-    position: absolute;
-}
-
-.forsale {
-    padding: 10px;
-background-color: #1F4B43;
-color: white;
-border-radius: 12px;
-}
-
-.featured {
-    padding: 10px;
-    background-color: #E7C873;
-    border-radius: 12px;
-
-}
-
-.properties-card-bottom-info {
-    position: absolute;
-    bottom: 0;
-    margin: 30px;
-    color: white;
-    z-index: 1;
-}
-.properties-card-bottom-bottom-info {
-    margin-top: 20px;
-    gap: 5px;
-    margin-left: px;
-}
-
-.propertiers-card-img::before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(26, 26, 26, 0.8) 100%);
+    background-image: url('../img/icon/sqft.svg');
 }
 
 .icon.icon-bed-white,
 .icon.icon-bath-white,
 .icon.icon-sqft-white {
-    filter: invert(99%) sepia(3%) saturate(119%) hue-rotate(63deg) brightness(118%) contrast(100%);
-
+    filter: invert(100%) sepia(1%) saturate(3478%) hue-rotate(252deg) brightness(120%) contrast(100%);
 }
-.proerties-description-text {
-    opacity: 0;
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.feature-product-card {
+    border-radius: 16px;
+    position: relative;
+    height: 100%;
+}
+.feature-product-card-text {
     position: absolute;
-    margin: 20px;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    top: 15px;
+    left: 15px;
     z-index: 1;
+    color: #ffffff;
 }
 
-.propertiers-card-img3::before {
-    opacity: 0;
+.feature-product-card-image {
+    display: flex;
+    height: 100%;
+}
+.feature-product-card-image img {
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.feature-product-card-overlay {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.city-product-card {
+    position: relative;
+    height: 100%;
+}
+
+.city-product-card-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.city-product-card-image {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    max-height: 370px;
+}
+
+.city-product-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.city-product-card-image::before {
     content: '';
     height: 100%;
     width: 100%;
     position: absolute;
-background: rgba(0, 0, 0, 0.7)
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.why-choose-us {
+    background-color: #E7C873;
+    padding: 60px 60px;
+    border-radius: 24px;
+}
+
+.why-choose-us-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
 
 }
 
-.proerties-description-arrow {
-    opacity: 0;
+.best-properties-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.best-properties-card-tags {
+    display: flex;
+    gap: 10px;
     position: absolute;
-    margin: 20px;
-    color: white;
+    left: 0;
+    top: 0;
+    padding: 25px;
+    width: 100%;
     z-index: 1;
-    bottom: 0;
-    margin-left: 240px;
-    margin-bottom: 50px;
-
 }
-.properties-card:hover .proerties-description-text,
-.properties-card:hover .proerties-description-arrow,
-.properties-card:hover .propertiers-card-img3::before{
+.best-properties-card-tags span {
+    border-radius: 30px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.best-properties-card-tags span.gold {
+    background-color: #E7C873;
+    color: #000000;
+}
+.best-properties-card-tags span.green {
+    background-color: #1F4B43;
+    color: #ffffff;
+}
+
+.best-properties-card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    color: #ffffff;
+    padding: 25px;
+    z-index: 1;
+}
+
+.best-properties-card-image {
+    position: relative;
+}
+.best-properties-card-image::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(26, 26, 26, 0.8) 100%);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.best-property-detail-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.best-property-detail-card-desc {
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms;
+}
+
+.best-property-detail-card:hover .best-property-detail-card-desc {
+    visibility: visible;
     opacity: 1;
 }
